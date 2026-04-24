@@ -26,6 +26,23 @@ change in their communities and beyond.
 # Make a dictionary where the keys are all the unique words in the string
 # (Hint: use the `.split()` method to get a list of all the words) and the
 # values are the number of times each word appears. Print the dicitonary.
+text = text.lower()
+text = text.replace(".", "")
+text = text.replace(",", "")
+text = text.replace("\n", " ")
+wordlist = []
+for word in text.split(" "):
+    wordlist.append(word)
+wordlist2 = {}
+
+for words in wordlist:
+    if words in wordlist2:
+        wordlist2[words] += 1
+    else:
+        wordlist2[words] = 1
+print(wordlist2)
+
+
 
 # 1. Remove all new lines and punctuation, and convert to all lowercase.
 #### YOUR CODE HERE

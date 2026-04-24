@@ -21,9 +21,9 @@ def pad_word_count(essay):
 
     #### START REPLACING CODE HERE
     new_essay = new_essay.replace("n't", " not")
-    new_essay = new_essay.replace("'s'", " is")
-    new_essay = new_essay.replace("'re'", " are")
-    new_essay = new_essay.replace("'ve'", " have")
+    new_essay = new_essay.replace("'s", " is")
+    new_essay = new_essay.replace("'re", " are")
+    new_essay = new_essay.replace("'ve", " have")
     #### STOP REPLACING CODE HERE
 
     return new_essay
